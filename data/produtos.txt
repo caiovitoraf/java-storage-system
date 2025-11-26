@@ -1,0 +1,26 @@
+codigo;nome;descricao;preco_unitario;quantidade_estoque
+1;Arroz Parboilizado Camil;Pacote de 5kg;25.50;94
+2;Feijão Carioca Kicaldo;Pacote de 1kg;8.90;75
+3;Açúcar Refinado União;Pacote de 1kg;4.50;148
+4;Café Tradicional Pilão;Pacote de 500g;14.80;60
+5;Óleo de Soja Liza;Garrafa de 900ml;7.20;120
+6;Leite Integral Piracanjuba;Caixa 1 Litro;5.20;90
+7;Pão de Forma Pullman;Pacote 500g;8.99;50
+8;Manteiga com Sal Aviação;Pote 200g;12.50;40
+9;Refrigerante Coca-Cola;Lata 350ml;3.50;200
+10;Biscoito Recheado Negresco;Pacote 140g;3.10;180
+11;Sabonete Dove Original;Unidade 90g;3.15;119
+12;Shampoo Seda Ceramidas;Frasco 325ml;11.90;69
+13;Creme Dental Colgate Total 12;Tubo 90g;5.50;99
+14;Detergente Líquido Ypê Neutro;Frasco 500ml;2.20;149
+15;Água Sanitária Qboa;Frasco 1 Litro;4.80;56
+16;Macarrão Espaguete Renata;Pacote 500g;4.30;107
+17;Molho de Tomate Fugini;Sachê 340g;2.10;130
+18;Milho Verde Quero;Lata 200g;3.80;94
+19;Maionese Hellmann's;Pote 500g;10.50;55
+20;Iogurte Grego Vigor;Copo 100g;3.99;73
+21;Achocolatado em Pó Nescau;Lata 400g;9.80;65
+22;Limpador Multiuso Veja;Frasco 500ml;5.40;84
+23;Amaciante Downy;Frasco 500ml;15.90;45
+24;Sabão em Pó Omo;Caixa 1kg;18.99;50
+25;Esponja de Aço Bombril;Pacote com 8;3.75;97
