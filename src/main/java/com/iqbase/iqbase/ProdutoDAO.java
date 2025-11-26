@@ -3,11 +3,13 @@ package com.iqbase.iqbase;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 public class ProdutoDAO {
 
@@ -16,10 +18,35 @@ public class ProdutoDAO {
 
     public ProdutoDAO() {
         this.listaDeProdutos = new ArrayList<>();
+        verificarECriarArquivoSeNecessario();
         carregarProdutosDoArquivo();
+    }
+    
+    private void verificarECriarArquivoSeNecessario() {
+        File arquivo = new File(CAMINHO_ARQUIVO);
+        if (!arquivo.exists()) {
+            try {
+                // Garante que o diretório 'data' exista
+                File diretorio = new File("data");
+                if (!diretorio.exists()) {
+                    diretorio.mkdirs();
+                }
+                arquivo.createNewFile();
+                salvarListaNoArquivo(); // Salva um arquivo vazio com cabeçalho
+                JOptionPane.showMessageDialog(null, "Arquivo 'produtos.txt' não encontrado.\nUm novo arquivo foi criado em 'data/'.", "Aviso", JOptionPane.INFORMATION_MESSAGE);
+            } catch (IOException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao criar o arquivo 'produtos.txt'.", "Erro", JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }
 
     private void carregarProdutosDoArquivo() {
+        File arquivo = new File(CAMINHO_ARQUIVO);
+        if (!arquivo.exists() || arquivo.length() == 0) {
+            return; // Não tenta carregar de um arquivo inexistente ou vazio
+        }
+        
         try (BufferedReader br = new BufferedReader(new FileReader(CAMINHO_ARQUIVO))) {
             String linha;
             br.readLine(); // Pula a linha do cabeçalho

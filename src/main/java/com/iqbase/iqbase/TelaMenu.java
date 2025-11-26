@@ -21,7 +21,7 @@ public class TelaMenu extends JFrame {
 
         // Painel para os botões
         JPanel painel = new JPanel();
-        painel.setLayout(new GridLayout(6, 1, 10, 10)); // 6 linhas, 1 coluna, com espaçamento para 6 botões
+        painel.setLayout(new GridLayout(5, 1, 10, 10)); // 5 linhas, 1 coluna, com espaçamento para 5 botões
         painel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50)); // Margem
 
         // Botão "Nova Venda"
@@ -45,33 +45,14 @@ public class TelaMenu extends JFrame {
             }
         });
         painel.add(botaoVerEstoque);
-        
-        // Botão "Fechar Caixa"
-        JButton botaoFecharCaixa = new JButton("Fechar Caixa");
-        botaoFecharCaixa.addActionListener(e -> {
-            String arquivoSessao = GerenciadorDeSessao.getInstancia().fecharSessaoAtual();
-            if (arquivoSessao != null) {
-                JOptionPane.showMessageDialog(TelaMenu.this, 
-                    "Caixa fechado com sucesso.\nRelatório da sessão salvo em:\n" + arquivoSessao +
-                    "\n\nPara iniciar um novo caixa, apenas inicie uma 'Nova Venda'.", 
-                    "Caixa Fechado", 
-                    JOptionPane.INFORMATION_MESSAGE);
-            } else {
-                JOptionPane.showMessageDialog(TelaMenu.this, 
-                    "Nenhuma sessão de caixa está aberta no momento.", 
-                    "Caixa Já Fechado", 
-                    JOptionPane.INFORMATION_MESSAGE);
-            }
-        });
-        painel.add(botaoFecharCaixa);
 
-        // Botão "Ver Relatório"
-        JButton botaoVerRelatorio = new JButton("Ver Relatório");
-        botaoVerRelatorio.addActionListener(e -> {
-            TelaRelatorio telaRelatorio = new TelaRelatorio(TelaMenu.this);
-            telaRelatorio.setVisible(true);
+        // Botão "Gerenciar Funcionários"
+        JButton botaoGerenciarFuncionarios = new JButton("Gerenciar Funcionários");
+        botaoGerenciarFuncionarios.addActionListener(e -> {
+            TelaGerenciarFuncionarios telaFuncionarios = new TelaGerenciarFuncionarios(TelaMenu.this);
+            telaFuncionarios.setVisible(true);
         });
-        painel.add(botaoVerRelatorio);
+        painel.add(botaoGerenciarFuncionarios);
 
         // Botão "Sobre o Sistema"
         JButton botaoSobreSistema = new JButton("Sobre o Sistema");

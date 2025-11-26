@@ -224,9 +224,6 @@ public class TelaVenda extends JDialog {
             // Salva as alterações no arquivo de produtos
             produtoDAO.salvarAlteracoes();
             
-            // Registra a venda no log da sessão
-            GerenciadorDeSessao.getInstancia().registrarVenda(itensVenda, totalVenda);
-            
             JOptionPane.showMessageDialog(this, "Venda finalizada com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }

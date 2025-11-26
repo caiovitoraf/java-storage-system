@@ -1,0 +1,7 @@
+codigo;nome;data_nascimento;sexo;cargo;usuario;senha
+1;João Silva;15/05/1990;Masculino;Vendedor;joao;123
+2;Maria Souza;20/10/1995;Feminino;Gerente;maria;456
+3;Carlos Pereira;03/08/1985;Masculino;Caixa;carlos;789
+4;Ana Oliveira;12/02/2000;Feminino;Estagiária;ana;101
+5;Pedro Martins;25/11/1992;Masculino;Vendedor;pedro;112
+6;Caio Vitor;25/06/2003;Masculino;Gerente;caio;2506

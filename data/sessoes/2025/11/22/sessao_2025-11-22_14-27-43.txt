@@ -1,6 +1,0 @@
-SESSAO_INICIO;2025-11-22 14:27:43
-VENDA;2025-11-22 14:27:43;15.40
-ITEM;2;Feijão Carioca Kicaldo;1;8.90;8.90
-ITEM;16;Macarrão Espaguete Renata;1;4.30;4.30
-ITEM;14;Detergente Líquido Ypê Neutro;1;2.20;2.20
-SESSAO_FIM;2025-11-22 14:28:11

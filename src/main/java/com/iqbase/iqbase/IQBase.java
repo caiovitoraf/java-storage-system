@@ -18,8 +18,8 @@ public class IQBase {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                TelaMenu telaMenu = new TelaMenu();
-                telaMenu.setVisible(true);
+                TelaInicial telaInicial = new TelaInicial();
+                telaInicial.setVisible(true);
             }
         });
     }
