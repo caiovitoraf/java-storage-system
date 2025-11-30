@@ -1,4 +1,3 @@
-
 package com.iqbase.iqbase;
 
 import java.time.LocalDateTime;

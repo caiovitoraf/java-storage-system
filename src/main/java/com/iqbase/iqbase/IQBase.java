@@ -1,10 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.iqbase.iqbase;
 
-
+import com.iqbase.iqbase.view.TelaInicial;
 import javax.swing.SwingUtilities;
 
 /**

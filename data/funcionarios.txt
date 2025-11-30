@@ -5,3 +5,4 @@ codigo;nome;data_nascimento;sexo;cargo;usuario;senha
 4;Ana Oliveira;12/02/2000;Feminino;Estagiária;ana;101
 5;Pedro Martins;25/11/1992;Masculino;Vendedor;pedro;112
 6;Caio Vitor;25/06/2003;Masculino;Gerente;caio;2506
+7;teste;01/12/2003;Feminino;Testador;null;null

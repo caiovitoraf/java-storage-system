@@ -1,6 +1,6 @@
 codigo;nome;descricao;preco_unitario;quantidade_estoque
 1;Arroz Parboilizado Camil;Pacote de 5kg;25.50;94
-2;Feijão Carioca Kicaldo;Pacote de 1kg;8.90;75
+2;Feijão Carioca Kicaldo;Pacote de 1kg;8.90;72
 3;Açúcar Refinado União;Pacote de 1kg;4.50;148
 4;Café Tradicional Pilão;Pacote de 500g;14.80;60
 5;Óleo de Soja Liza;Garrafa de 900ml;7.20;120
